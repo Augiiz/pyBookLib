@@ -1,3 +1,3 @@
 # pyBookLib
  
-Run main.py through console or terminal
+Run main.py through cmd or terminal
