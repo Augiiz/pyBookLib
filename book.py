@@ -52,7 +52,7 @@ class Book:
         Book.clear_year_list()
         print("Book name | Author | Release Date")
         for book in Book.book_list:
-            if book_name_or_author == book.book_name or book_name_or_author == book.book_author:
+            if book_name_or_author == book.book_name and book.taken is False or book_name_or_author == book.book_author and book.taken is False:
                 Book.specific_book_by_year_list.append(Book(book.book_name, book.book_author, book.release_date, False))
 
         Book.sort_books_by_date()
